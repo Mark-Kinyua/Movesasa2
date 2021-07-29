@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pizzas"
+            android:title="@string/pizzas"
+            android:icon="@drawable/ic_pizza"
+            />
+
+        <item
+            android:id="@+id/nav_burgers"
+            android:title="@string/burgers"
+            android:icon="@drawable/ic_burgers"
+            />
+
+        <item
+            android:id="@+id/nav_cocktails"
+            android:title="@string/cocktails"
+            android:icon="@drawable/ic_cocktails"
+            />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_contact"
+            android:title="@string/contact_us"
+            android:icon="@drawable/ic_call"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/my_profile"
+            android:icon="@drawable/ic_info"/>
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="@string/share_app"
+            android:icon="@drawable/ic_share"/>
+    </group>
+</menu>

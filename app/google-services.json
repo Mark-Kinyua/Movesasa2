@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "722400421534",
+    "project_id": "movesasa-2",
+    "storage_bucket": "movesasa-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722400421534:android:e56384958023b67c76fd8f",
+        "android_client_info": {
+          "package_name": "com.muriithi.movesasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722400421534-2i6h58gh1vdifunqrrdf5cbgrt19s9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHXpKZljmADehsaKfZhu1dyWwr-qrGM_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722400421534-2i6h58gh1vdifunqrrdf5cbgrt19s9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
