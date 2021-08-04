@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 switch (id){
                     case R.id.nav_pizzas:
-                        Pizzas pizzaFragment = new Pizzas();
+                        Pizzas pizzaFragment  = new Pizzas();
                         getSupportFragmentManager().beginTransaction().add(R.id.fragment_replace, pizzaFragment).commit();
                         break;
                     case R.id.nav_burgers:

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/colorMaroon"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/saker_bold"
+        android:text="@string/janice_malu"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/saker_bold"
+        android:text="@string/janice_malu_strathmore_edu"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+</LinearLayout>
