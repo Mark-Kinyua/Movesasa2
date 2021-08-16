@@ -10,14 +10,14 @@
     <ImageView
         android:layout_width="95dp"
         android:layout_height="95dp"
-        android:contentDescription="@string/icon"
+        android:contentDescription="@string/sign_in_to_continue"
         android:src="@drawable/user" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/saker_bold"
-        android:text="@string/janice_malu"
+        android:text="@string/mark_muriithi"
         android:textColor="@color/colorWhite"
         android:textSize="24sp" />
 
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/saker_bold"
-        android:text="@string/janice_malu_strathmore_edu"
+        android:text="@string/markinyua_gmail_com"
         android:textColor="@color/colorWhite"
         android:textSize="14sp" />
 </LinearLayout>

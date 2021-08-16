@@ -21,9 +21,7 @@
             android:background="@color/colorMaroon"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:logo="@mipmap/ic_droid_logo"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:titleTextAppearance="@style/app_title" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
 
         <com.google.android.material.tabs.TabLayout
@@ -56,7 +54,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header"
-        app:itemTextAppearance="@style/my_font"
         app:menu="@menu/main_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

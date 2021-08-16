@@ -58,7 +58,7 @@
     <string name="status_sign_in_failed">Sign-in failed</string>
     <string name="instant_validation">(instant validation)</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
-    <string name="username">Username</string>
+    <string name="usertype">User Type</string>
     <string name="top_image">Top Image</string>
     <string name="text_image">Text Image</string>
     <string name="sign_in_to_continue">Sign In to continue</string>
@@ -123,4 +123,18 @@
     <string name="contact">Contact Us</string>
     <string name="share_app">Share App</string>
     <string name="jobs">Jobs</string>
+    <string name="mark_muriithi">Mark Muriithi</string>
+    <string name="markinyua_gmail_com">markinyua@gmail.com</string>
+
+    <string-array name="usertype_arrays">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
 </resources>
