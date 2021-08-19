@@ -79,6 +79,7 @@
     <string name="start_your_journey">Start Your\nJourney</string>
     <string name="owner_s_username">Owner\'s Username</string>
     <string name="my_profile">My Profile</string>
+    <string name="username">Username</string>
     <string name="medical_records">Medical Records</string>
     <string name="book_appointments">Book Appointments</string>
     <string name="bills_and_payments">Bills and Payments</string>
@@ -125,16 +126,4 @@
     <string name="jobs">Jobs</string>
     <string name="mark_muriithi">Mark Muriithi</string>
     <string name="markinyua_gmail_com">markinyua@gmail.com</string>
-
-    <string-array name="usertype_arrays">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
-
 </resources>

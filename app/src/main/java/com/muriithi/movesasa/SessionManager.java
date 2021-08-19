@@ -16,7 +16,7 @@ public class SessionManager {
     public static final String KEY_DATE = "birth_date";
     public static final String KEY_EMAIL = "email_address";
     public static final String KEY_PHONE = "phone_number";
-    public static final String KEY_USER = "user_name";
+    public static final String KEY_USER = "user_type";
     public static final String KEY_PASSWORD = "pass_word";
 
     public SessionManager(Context _context) {
@@ -25,7 +25,7 @@ public class SessionManager {
         editor = sharedPreferences.edit();
     }
 
-    public void createLoginSession(String full_name, String birth_date, String email_address, String phone_number, String user_name, String pass_word) {
+    public void createLoginSession(String full_name, String birth_date, String email_address, String phone_number, String user_type, String pass_word) {
 
         editor.putBoolean(IS_LOGIN, true);
 
@@ -33,7 +33,7 @@ public class SessionManager {
         editor.putString(KEY_DATE, birth_date);
         editor.putString(KEY_EMAIL, email_address);
         editor.putString(KEY_PHONE, phone_number);
-        editor.putString(KEY_USER, user_name);
+        editor.putString(KEY_USER, user_type);
         editor.putString(KEY_PASSWORD, pass_word);
 
         editor.commit();
