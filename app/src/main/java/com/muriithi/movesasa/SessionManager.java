@@ -16,7 +16,8 @@ public class SessionManager {
     public static final String KEY_DATE = "birth_date";
     public static final String KEY_EMAIL = "email_address";
     public static final String KEY_PHONE = "phone_number";
-    public static final String KEY_USER = "user_type";
+    public static final String KEY_USER = "user_name";
+    public static final String KEY_USERTYPE = "user_type";
     public static final String KEY_PASSWORD = "pass_word";
 
     public SessionManager(Context _context) {
@@ -25,7 +26,7 @@ public class SessionManager {
         editor = sharedPreferences.edit();
     }
 
-    public void createLoginSession(String full_name, String birth_date, String email_address, String phone_number, String user_type, String pass_word) {
+    public void createLoginSession(String full_name, String birth_date, String email_address, String phone_number, String user_type, String user_name, String pass_word) {
 
         editor.putBoolean(IS_LOGIN, true);
 
@@ -33,7 +34,8 @@ public class SessionManager {
         editor.putString(KEY_DATE, birth_date);
         editor.putString(KEY_EMAIL, email_address);
         editor.putString(KEY_PHONE, phone_number);
-        editor.putString(KEY_USER, user_type);
+        editor.putString(KEY_USERTYPE, user_type);
+        editor.putString(KEY_USER, user_name);
         editor.putString(KEY_PASSWORD, pass_word);
 
         editor.commit();
@@ -46,6 +48,7 @@ public class SessionManager {
         userData.put(KEY_DATE, sharedPreferences.getString(KEY_DATE, null));
         userData.put(KEY_EMAIL, sharedPreferences.getString(KEY_EMAIL, null));
         userData.put(KEY_PHONE, sharedPreferences.getString(KEY_PHONE, null));
+        userData.put(KEY_USERTYPE, sharedPreferences.getString(KEY_USERTYPE, null));
         userData.put(KEY_USER, sharedPreferences.getString(KEY_USER, null));
         userData.put(KEY_PASSWORD, sharedPreferences.getString(KEY_PASSWORD, null));
 

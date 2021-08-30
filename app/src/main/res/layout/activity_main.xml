@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorNavyBlue">
+    android:background="@color/colorLightOrange">
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,7 +18,7 @@
         android:transitionName="logo"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/top_image"
-        android:src="@drawable/item" />
+        android:src="@drawable/moving" />
 
     <TextView
         android:id="@+id/text"

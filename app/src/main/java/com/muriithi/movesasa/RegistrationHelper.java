@@ -1,18 +1,19 @@
 package com.muriithi.movesasa;
 
 public class RegistrationHelper {
-    String name, date, email, phone, username, password;
+    String name, date, email, phone, usertype, username, password;
 
     public RegistrationHelper(){
 
     }
 
-    public RegistrationHelper(String name, String date, String email, String phone, String username, String password) {
+    public RegistrationHelper(String name, String date, String email, String phone, String usertype, String username, String password) {
         this.name = name;
         this.date = date;
         this.email = email;
         this.phone = phone;
         this.username = username;
+        this.usertype = usertype;
         this.password = password;
     }
 
@@ -48,6 +49,10 @@ public class RegistrationHelper {
         this.phone = phone;
     }
 
+    public String getUsertype() {return usertype; }
+
+    public void setUsertype(String usertype) {this.usertype = usertype; }
+
     public String getUsername() {
         return username;
     }
@@ -64,3 +69,5 @@ public class RegistrationHelper {
         this.password = password;
     }
 }
+
+

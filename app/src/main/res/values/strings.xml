@@ -59,6 +59,7 @@
     <string name="instant_validation">(instant validation)</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
     <string name="usertype">User Type</string>
+    <string name="usertype_options">User Type (Mover or Client)</string>
     <string name="top_image">Top Image</string>
     <string name="text_image">Text Image</string>
     <string name="sign_in_to_continue">Sign In to continue</string>
@@ -100,13 +101,13 @@
     <string name="slider_title">Slider Title</string>
     <string name="slider_description">Slider Description</string>
 
-    <string name="first_slide_title">Book Your Appointment</string>
-    <string name="second_slide_title">Get Your Prescription</string>
-    <string name="third_slide_title">The Best Doctors</string>
+    <string name="first_slide_title">Easily Move Household / Office Items</string>
+    <string name="second_slide_title">Quick Moving</string>
+    <string name="third_slide_title">The Best Movers</string>
 
-    <string name="first_slide_desc">Let us know more about you and your preferences</string>
-    <string name="second_slide_desc">Let us know more about you and your preferences</string>
-    <string name="third_slide_desc">Let us know more about you and your preferences</string>
+    <string name="first_slide_desc">Moving has never been easier</string>
+    <string name="second_slide_desc">All we need is the location and photos of items being moved</string>
+    <string name="third_slide_desc">All movers are verified and reduce cases of theft.</string>
     <string name="select_the_type_of_doctor">Select the type of doctor</string>
     <string name="type_of_doctor">Type of doctor</string>
     <string name="select_date">Select Date</string>
@@ -126,4 +127,32 @@
     <string name="jobs">Jobs</string>
     <string name="mark_muriithi">Mark Muriithi</string>
     <string name="markinyua_gmail_com">markinyua@gmail.com</string>
+    <string name="schedule_move">Schedule Move</string>
+    <string name="new_location">New Location</string>
+    <string name="current_location">Current Location</string>
+    <string name="location_example">eg. Langata Freedom Heights</string>
+    <string name="moving_date">Moving Date</string>
+    <string name="moving_time">Moving Time</string>
+    <string name="choose_item_photos">Choose Item Photos</string>
+    <string name="ongoing_jobs">Ongoing Jobs</string>
+    <string name="accept_available_jobs">Accept Available Jobs</string>
+    <string name="company_contacts">Company Contacts</string>
+
+    <string-array name="items_class">
+        <item>Client</item>
+        <item>Mover</item>
+
+    </string-array>
+
+    <string-array name="items_div_class_1">
+        <item>Div 1-A</item>
+        <item>Div 1-B</item>
+    </string-array>
+
+    <string-array name="items_div_class_2">
+        <item>Div 2-A</item>
+        <item>Div 2-B</item>
+    </string-array>
+
+
 </resources>

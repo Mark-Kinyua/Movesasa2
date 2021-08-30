@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DashboardMover"
+            android:exported="true" />
+        <activity
             android:name=".Appointments"
             android:exported="true" />
         <activity
