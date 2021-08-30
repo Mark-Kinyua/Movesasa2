@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_welcome"
+        android:fontFamily="@font/margarib"
+        android:textSize="40sp"
+        android:transitionName="logo_text"
+        android:textColor="@color/colorMaroon"/>
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_to_continue"
+        android:fontFamily="@font/margarib"
+        android:textSize="20sp"
+        android:transitionName="sub_trans"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:hint="@string/username"
+            android:transitionName="user_trans"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:fontFamily="@font/margarib"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="30dp"
+            android:transitionName="pass_trans"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:fontFamily="@font/margarib"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_marginTop="30dp"
+            android:onClick="loginUser"
+            android:background="@color/colorMaroon"
+            android:transitionName="log_trans"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/margarib"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/no_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorTransparent"
+            android:layout_gravity="end"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="30dp"
+            android:transitionName="sign_trans"
+            android:onClick="userSignUp"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/margarib"
+            android:text="@string/don_t_have_an_account_sign_up"
+            android:elevation="0dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
