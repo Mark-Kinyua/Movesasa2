@@ -79,33 +79,35 @@ public class Login extends AppCompatActivity {
 
                         // Add If statement for mover dashboard or client dashboard
 
-                        if (usertypeFromDB.equals("Client")) {
-                            Intent intent = new Intent(getApplicationContext(), Dashboard.class); // Go to client dashboard
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("date", dateFromDB);
-                            intent.putExtra("email", emailFromDB);
-                            intent.putExtra("phone", phoneFromDB);
-                            intent.putExtra("usertype", usertypeFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("password", passFromDB);
-                            SessionManager sessionManager = new SessionManager(Login.this);
-                            sessionManager.createLoginSession(nameFromDB,dateFromDB,emailFromDB,phoneFromDB,usertypeFromDB,usernameFromDB,passFromDB);
 
-                            startActivity(intent);
-                        }else if(usertypeFromDB.equals("Mover")){
-                            Intent intent = new Intent(getApplicationContext(), DashboardMover.class); //  Go to mover dashboard
-                            intent.putExtra("name", nameFromDB);
-                            intent.putExtra("date", dateFromDB);
-                            intent.putExtra("email", emailFromDB);
-                            intent.putExtra("phone", phoneFromDB);
-                            intent.putExtra("usertype", usertypeFromDB);
-                            intent.putExtra("username", usernameFromDB);
-                            intent.putExtra("password", passFromDB);
-                            SessionManager sessionManager = new SessionManager(Login.this);
-                            sessionManager.createLoginSession(nameFromDB,dateFromDB,emailFromDB,phoneFromDB,usertypeFromDB,usernameFromDB,passFromDB);
+//                        Intent intent = new Intent(getApplicationContext(), DashboardMover.class); // Go to client dashboard
+//                        intent.putExtra("name", nameFromDB);
+//                        intent.putExtra("date", dateFromDB);
+//                        intent.putExtra("email", emailFromDB);
+//                        intent.putExtra("phone", phoneFromDB);
+//                        intent.putExtra("usertype", usertypeFromDB);
+//                        intent.putExtra("username", usernameFromDB);
+//                        intent.putExtra("password", passFromDB);
+//                        SessionManager sessionManager = new SessionManager(Login.this);
+//                        sessionManager.createLoginSession(nameFromDB,dateFromDB,emailFromDB,phoneFromDB,usertypeFromDB,usernameFromDB,passFromDB);
+//
+//                        startActivity(intent);
+                        
 
-                            startActivity(intent);
-                        }
+
+                        Intent intent = new Intent(getApplicationContext(), Dashboard.class); //  Go to mover dashboard
+                        intent.putExtra("name", nameFromDB);
+                        intent.putExtra("date", dateFromDB);
+                        intent.putExtra("email", emailFromDB);
+                        intent.putExtra("phone", phoneFromDB);
+                        intent.putExtra("usertype", usertypeFromDB);
+                        intent.putExtra("username", usernameFromDB);
+                        intent.putExtra("password", passFromDB);
+                        SessionManager sessionManager = new SessionManager(Login.this);
+                        sessionManager.createLoginSession(nameFromDB,dateFromDB,emailFromDB,phoneFromDB,usertypeFromDB,usernameFromDB,passFromDB);
+
+                        startActivity(intent);
+
 
                         Toast.makeText(Login.this, "Login Successful",Toast.LENGTH_SHORT).show();
                     }else {
