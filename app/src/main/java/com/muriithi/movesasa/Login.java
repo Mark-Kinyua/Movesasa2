@@ -92,7 +92,7 @@ public class Login extends AppCompatActivity {
 //                        sessionManager.createLoginSession(nameFromDB,dateFromDB,emailFromDB,phoneFromDB,usertypeFromDB,usernameFromDB,passFromDB);
 //
 //                        startActivity(intent);
-                        
+//
 
 
                         Intent intent = new Intent(getApplicationContext(), Dashboard.class); //  Go to mover dashboard
