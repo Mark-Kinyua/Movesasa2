@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-hdpi/action_button_style.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/drawable-hdpi/add_icon.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/drawable-hdpi/circular_bordershape.xml" value="0.25052083333333336" />
         <entry key="app/src/main/res/layout/activity_appointments.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/activity_chat.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.334375" />
@@ -11,14 +14,20 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.334375" />
+        <entry key="app/src/main/res/layout/activity_post.xml" value="0.31979166666666664" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.32407407407407407" />
         <entry key="app/src/main/res/layout/activity_records.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.334375" />
+        <entry key="app/src/main/res/layout/activity_single_post.xml" value="0.334375" />
+        <entry key="app/src/main/res/layout/activity_view_jobs.xml" value="0.334375" />
+        <entry key="app/src/main/res/layout/card_items.xml" value="0.334375" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/fragment_pizzas.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/header.xml" value="0.334375" />
         <entry key="app/src/main/res/layout/item_send_msg.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/onboard_slides.xml" value="0.334375" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.3292307692307692" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.234375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25052083333333336" />
       </map>
     </option>

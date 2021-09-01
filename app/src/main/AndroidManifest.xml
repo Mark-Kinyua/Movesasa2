@@ -17,6 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SinglePostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewJobs"
+            android:exported="true" />
+        <activity
             android:name=".DashboardMover"
             android:exported="true" />
         <activity

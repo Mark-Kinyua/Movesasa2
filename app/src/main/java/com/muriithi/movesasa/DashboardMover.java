@@ -62,7 +62,7 @@ public class DashboardMover extends AppCompatActivity {CardView profile, records
         appointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardMover.this, Appointments.class);
+                Intent intent = new Intent(DashboardMover.this, ViewJobs.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +70,7 @@ public class DashboardMover extends AppCompatActivity {CardView profile, records
         emergency.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardMover.this, ChatBot.class);
+                Intent intent = new Intent(DashboardMover.this, PostActivity.class);
                 startActivity(intent);
             }
         });

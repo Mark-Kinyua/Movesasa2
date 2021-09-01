@@ -199,7 +199,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/chat_two"/>
+                        android:src="@drawable/chat_two" />
 
                     <TextView
                         android:id="@+id/emergency_text"

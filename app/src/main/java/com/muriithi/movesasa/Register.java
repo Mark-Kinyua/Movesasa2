@@ -23,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -39,6 +40,7 @@ public class Register extends AppCompatActivity {
     ImageView logo_image;
     TextView logo_text, slogan_text;
     Spinner reg_usertype_spinner, divSpinner;
+    private FirebaseAuth mAuth;
 
     String[] usertype = {"Client", "Mover"};
 
@@ -51,6 +53,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_register);
+
 
         logo_image = findViewById(R.id.logo_image);
         logo_text = findViewById(R.id.logo_name);
@@ -236,6 +239,23 @@ public class Register extends AppCompatActivity {
         if(!validateName() | !validateDate() | !validatePassword() | !validatePhone() | !validateEmail() | !validateUsername()){
             return;
         }
+
+        final FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        firebaseUser.sendEmailVerification().addOnCompleteListener(this, new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(
+                            Register.this, "Verification email sent to " + firebaseUser.getEmail(), Toast.LENGTH_LONG
+                    ).show();
+                } else {
+                    Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+
+
 
         rootNode = FirebaseDatabase.getInstance();
         reference = rootNode.getReference("Users");
